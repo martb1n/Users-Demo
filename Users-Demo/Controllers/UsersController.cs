@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Users_Demo.Models;
+using Users_Demo.Requests;
 
 namespace Users_Demo.Controllers
 {
@@ -18,14 +19,14 @@ namespace Users_Demo.Controllers
             _context = context;
         }
 
-        // GET: api/Users1
+        // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Users1/5
+        // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Users>> GetUsers(int id)
         {
@@ -39,8 +40,8 @@ namespace Users_Demo.Controllers
             return users;
         }
 
-        [HttpGet("{firstName}")]
-        public IQueryable<Users> GetUsers(string firstName)
+        [HttpGet("GetUsersByFirstName/{firstName}")]
+        public IQueryable<Users> GetUsersByFirstName(string firstName)
         {
             var users = from user in _context.Users
                         where user.FirstName == firstName
@@ -48,8 +49,8 @@ namespace Users_Demo.Controllers
             return users;
         }
 
-        [HttpGet("{lastName}")]
-        public IQueryable<Users> GetUserLastname(string lastName)
+        [HttpGet("GetUsersByLastName/{lastName}")]
+        public IQueryable<Users> GetUsersByLastName(string lastName)
         {
             var users = from user in _context.Users
                         where user.LastName == lastName
@@ -57,7 +58,7 @@ namespace Users_Demo.Controllers
             return users;
         }
 
-        // PUT: api/Users1/5
+        // PUT: api/Users/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsers(int id, Users users)
         {
@@ -87,7 +88,7 @@ namespace Users_Demo.Controllers
             return NoContent();
         }
 
-        // POST: api/Users1
+        // POST: api/Users
         [HttpPost]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {
@@ -97,7 +98,7 @@ namespace Users_Demo.Controllers
             return CreatedAtAction("GetUsers", new { id = users.Id }, users);
         }
 
-        // DELETE: api/Users1/5
+        // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Users>> DeleteUsers(int id)
         {
