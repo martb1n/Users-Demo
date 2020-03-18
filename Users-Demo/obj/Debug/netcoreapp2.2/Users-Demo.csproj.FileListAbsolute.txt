@@ -1,0 +1,17 @@
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\Users-Demo.deps.json
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\Users-Demo.runtimeconfig.json
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\Users-Demo.runtimeconfig.dev.json
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\Users-Demo.dll
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.csprojAssemblyReference.cache
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.csproj.CoreCompileInputs.cache
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.RazorAssemblyInfo.cache
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.RazorAssemblyInfo.cs
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.AssemblyInfoInputs.cache
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.AssemblyInfo.cs
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.RazorTargetAssemblyInfo.cache
+D:\Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp2.2\Users-Demo.pdb
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.dll
+D:\Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp2.2\Users-Demo.pdb
