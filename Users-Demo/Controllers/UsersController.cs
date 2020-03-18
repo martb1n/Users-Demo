@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Users_Demo.Models;
-using Users_Demo.Requests;
 
 namespace Users_Demo.Controllers
 {
