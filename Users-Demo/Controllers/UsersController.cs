@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Users_Demo.Models;
@@ -20,14 +18,14 @@ namespace Users_Demo.Controllers
             _context = context;
         }
 
-        // GET: api/Users
+        // GET: api/Users1
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
         }
 
-        // GET: api/Users/5
+        // GET: api/Users1/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Users>> GetUsers(int id)
         {
@@ -41,7 +39,25 @@ namespace Users_Demo.Controllers
             return users;
         }
 
-        // PUT: api/Users/5
+        [HttpGet("{firstName}")]
+        public IQueryable<Users> GetUsers(string firstName)
+        {
+            var users = from user in _context.Users
+                        where user.FirstName == firstName
+                        select user;
+            return users;
+        }
+
+        [HttpGet("{lastName}")]
+        public IQueryable<Users> GetUserLastname(string lastName)
+        {
+            var users = from user in _context.Users
+                        where user.LastName == lastName
+                        select user;
+            return users;
+        }
+
+        // PUT: api/Users1/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsers(int id, Users users)
         {
@@ -71,7 +87,7 @@ namespace Users_Demo.Controllers
             return NoContent();
         }
 
-        // POST: api/Users
+        // POST: api/Users1
         [HttpPost]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {
@@ -81,7 +97,7 @@ namespace Users_Demo.Controllers
             return CreatedAtAction("GetUsers", new { id = users.Id }, users);
         }
 
-        // DELETE: api/Users/5
+        // DELETE: api/Users1/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Users>> DeleteUsers(int id)
         {

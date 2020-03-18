@@ -13154,11 +13154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Demo\\Users-Demo\\Users-Demo\\Users-Demo.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo\\Users-Demo.csproj",
       "projectName": "Users-Demo",
-      "projectPath": "D:\\Demo\\Users-Demo\\Users-Demo\\Users-Demo.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo\\Users-Demo.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Demo\\Users-Demo\\Users-Demo\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
