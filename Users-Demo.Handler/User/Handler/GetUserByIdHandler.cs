@@ -5,12 +5,12 @@ using Users_Demo.DAL.Models;
 using Users_Demo.Handler.User.Request;
 using Users_Demo.Services.Interface;
 
-namespace Users_Demo.Handler.User.HandlerRequest
+namespace Users_Demo.Handler.User.Handler
 {
-    public class GetUserByIdRequestHandler : IRequestHandler<GetUserByIdQuery, Users_Demo.DAL.Models.Users>
+    public class GetUserByIdHandler : IRequestHandler<GetUserByIdQuery, Users>
     {
         private readonly IUserService userService;
-        public GetUserByIdRequestHandler(IUserService userService)
+        public GetUserByIdHandler(IUserService userService)
         {
             this.userService = userService;
         }

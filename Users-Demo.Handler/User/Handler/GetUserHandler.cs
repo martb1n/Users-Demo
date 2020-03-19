@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Users_Demo.DAL.Models;
 using Users_Demo.Handler.User.Request;
 using Users_Demo.Services.Interface;
 
-namespace Users_Demo.Handler.User.HandlerRequest
+namespace Users_Demo.Handler.User.Handler
 {
-    public class GetUserRequestHandler : IRequestHandler<GetUsersQuery, IEnumerable<Users_Demo.DAL.Models.Users>>
+    public class GetUserHandler : IRequestHandler<GetUsersQuery, IEnumerable<Users>>
     {
         private readonly IUserService userService;
-        public GetUserRequestHandler(IUserService userService)
+        public GetUserHandler(IUserService userService)
         {
             this.userService = userService;
         }
-        public async Task<IEnumerable<DAL.Models.Users>> Handle(GetUsersQuery request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<Users>> Handle(GetUsersQuery request, CancellationToken cancellationToken)
         {
             var result = await userService.Get();
             return result;

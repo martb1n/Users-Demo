@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Users-Demo.DAL\Users-Demo.DAL.csproj" />
+    <ProjectReference Include="..\Users-Demo.Handler\Users-Demo.Handler.csproj" />
     <ProjectReference Include="..\Users-Demo.Services\Users-Demo.Services.csproj" />
   </ItemGroup>
 

@@ -2832,6 +2832,20 @@
           "bin/placeholder/Users-Demo.DAL.dll": {}
         }
       },
+      "Users-Demo.Handler/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MediatR.Extensions.Microsoft.DependencyInjection": "8.0.0",
+          "Users-Demo.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users-Demo.Handler.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users-Demo.Handler.dll": {}
+        }
+      },
       "Users-Demo.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -8828,6 +8842,11 @@
       "path": "../Users-Demo.DAL/Users-Demo.DAL.csproj",
       "msbuildProject": "../Users-Demo.DAL/Users-Demo.DAL.csproj"
     },
+    "Users-Demo.Handler/1.0.0": {
+      "type": "project",
+      "path": "../Users-Demo.Handler/Users-Demo.Handler.csproj",
+      "msbuildProject": "../Users-Demo.Handler/Users-Demo.Handler.csproj"
+    },
     "Users-Demo.Repository/1.0.0": {
       "type": "project",
       "path": "../Users-Demo.Repository/Users-Demo.Repository.csproj",
@@ -8853,6 +8872,7 @@
       "Swashbuckle.AspNetCore.SwaggerGen >= 5.1.0",
       "Swashbuckle.AspNetCore.SwaggerUI >= 5.1.0",
       "Users-Demo.DAL >= 1.0.0",
+      "Users-Demo.Handler >= 1.0.0",
       "Users-Demo.Services >= 1.0.0"
     ]
   },
@@ -8891,6 +8911,9 @@
           "projectReferences": {
             "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.DAL\\Users-Demo.DAL.csproj": {
               "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.DAL\\Users-Demo.DAL.csproj"
+            },
+            "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Handler\\Users-Demo.Handler.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Handler\\Users-Demo.Handler.csproj"
             },
             "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Services\\Users-Demo.Services.csproj": {
               "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Services\\Users-Demo.Services.csproj"

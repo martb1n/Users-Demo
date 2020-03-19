@@ -36,6 +36,7 @@
           "Swashbuckle.AspNetCore.SwaggerGen": "5.1.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "5.1.0",
           "Users-Demo.DAL": "1.0.0",
+          "Users-Demo.Handler": "1.0.0",
           "Users-Demo.Services": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -2451,6 +2452,18 @@
         },
         "compile": {
           "Users-Demo.DAL.dll": {}
+        }
+      },
+      "Users-Demo.Handler/1.0.0": {
+        "dependencies": {
+          "MediatR.Extensions.Microsoft.DependencyInjection": "8.0.0",
+          "Users-Demo.Services": "1.0.0"
+        },
+        "runtime": {
+          "Users-Demo.Handler.dll": {}
+        },
+        "compile": {
+          "Users-Demo.Handler.dll": {}
         }
       },
       "Users-Demo.Repository/1.0.0": {
@@ -5275,6 +5288,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Users-Demo.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Users-Demo.Handler/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

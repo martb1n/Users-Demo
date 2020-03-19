@@ -316,3 +316,5 @@ C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Handler.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Handler.pdb

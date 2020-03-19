@@ -1,16 +1,15 @@
 ﻿using MediatR;
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Users_Demo.Handler.User.Request;
 using Users_Demo.Services.Interface;
 
-namespace Users_Demo.Handler.User.HandlerRequest
+namespace Users_Demo.Handler.User.Handler
 {
-    public class UpdateUserRequestHandler : IRequestHandler<UpdateUserQuery, bool>
+    class UpdateUserHandler : IRequestHandler<UpdateUserQuery, bool>
     {
         private readonly IUserService userService;
-        public UpdateUserRequestHandler(IUserService userService)
+        public UpdateUserHandler(IUserService userService)
         {
             this.userService = userService;
         }

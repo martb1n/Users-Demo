@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using System.Threading.Tasks;
 using Users_Demo.DAL.Models;
-using Users_Demo.Services.Interface;
-using MediatR;
 using Users_Demo.Handler.User.Request;
-using System.Linq;
+using Users_Demo.Services.Interface;
 
 namespace Users_Demo.Controllers
 {

@@ -1,9 +1,9 @@
 ﻿using MediatR;
-using System.Collections.Generic;
+using Users_Demo.DAL.Models;
 
 namespace Users_Demo.Handler.User.Request
 {
-    public class GetUserByIdQuery : IRequest<Users_Demo.DAL.Models.Users>
+    public class GetUserByIdQuery : IRequest<Users>
     {
         public GetUserByIdQuery(int Id)
         {

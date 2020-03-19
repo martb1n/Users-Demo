@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 using Users_Demo.Handler.User.Request;
 using Users_Demo.Services.Interface;
 
-namespace Users_Demo.Handler.User.HandlerRequest
+namespace Users_Demo.Handler.User.Handler
 {
-    public class CreateUserRequestHandler : IRequestHandler<CreateUserQuery, bool>
+    class CreateUserHandler : IRequestHandler<CreateUserQuery, bool>
     {
         private readonly IUserService userService;
-        public CreateUserRequestHandler(IUserService userService)
+        public CreateUserHandler(IUserService userService)
         {
             this.userService = userService;
         }

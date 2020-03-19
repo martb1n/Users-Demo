@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 using Users_Demo.Handler.User.Request;
 using Users_Demo.Services.Interface;
 
-namespace Users_Demo.Handler.User.HandlerRequest
+namespace Users_Demo.Handler.User.Handler
 {
-    public class DeleteUserRequestHandler : IRequestHandler<DeleteUserQuery, bool>
+    public class DeleteUserHandler : IRequestHandler<DeleteUserQuery, bool>
     {
         private readonly IUserService userService;
-        public DeleteUserRequestHandler(IUserService userService)
+        public DeleteUserHandler(IUserService userService)
         {
             this.userService = userService;
         }

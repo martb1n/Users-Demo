@@ -1,0 +1,16 @@
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.Handler.deps.json
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.Handler.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.DAL.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.Repository.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.Services.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.Services.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.DAL.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.Repository.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\obj\Debug\netstandard2.0\Users-Demo.Handler.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\obj\Debug\netstandard2.0\Users-Demo.Handler.AssemblyInfo.cs
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\obj\Debug\netstandard2.0\Users-Demo.Handler.csproj.CopyComplete
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\bin\Debug\netstandard2.0\Users-Demo.Handler.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\obj\Debug\netstandard2.0\Users-Demo.Handler.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\obj\Debug\netstandard2.0\Users-Demo.Handler.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\obj\Debug\netstandard2.0\Users-Demo.Handler.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Handler\obj\Debug\netstandard2.0\Users-Demo.Handler.csproj.CoreCompileInputs.cache

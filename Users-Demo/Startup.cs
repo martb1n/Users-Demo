@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using MediatR;
@@ -25,7 +26,9 @@ namespace Users_Demo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMediatR(typeof(Startup));
+            var assembly = AppDomain.CurrentDomain.Load("Users-Demo.Handler");
+            services.AddMediatR(assembly);
+            //services.AddMediatR(typeof(Startup));
             services.AddServices();
             services.AddRepository();
             services.AddControllers();
