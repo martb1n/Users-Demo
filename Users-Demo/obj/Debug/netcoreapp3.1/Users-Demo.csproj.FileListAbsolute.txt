@@ -296,9 +296,6 @@ C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.csprojAssemblyReference.cache
-C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.AssemblyInfoInputs.cache
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.AssemblyInfo.cs
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.RazorTargetAssemblyInfo.cache
@@ -314,3 +311,8 @@ C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Services.dll
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Services.pdb
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Repository.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.MvcApplicationPartsAssemblyInfo.cache

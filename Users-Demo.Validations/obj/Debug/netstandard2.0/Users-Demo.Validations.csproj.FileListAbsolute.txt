@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\bin\Debug\netstandard2.0\Users-Demo.Validations.deps.json
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\bin\Debug\netstandard2.0\Users-Demo.Validations.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\obj\Debug\netstandard2.0\Users-Demo.Validations.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\obj\Debug\netstandard2.0\Users-Demo.Validations.AssemblyInfo.cs
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\obj\Debug\netstandard2.0\Users-Demo.Validations.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\bin\Debug\netstandard2.0\Users-Demo.Validations.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\bin\Debug\netstandard2.0\Users-Demo.DAL.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\bin\Debug\netstandard2.0\Users-Demo.DAL.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\obj\Debug\netstandard2.0\Users-Demo.Validations.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\obj\Debug\netstandard2.0\Users-Demo.Validations.csproj.CopyComplete
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\obj\Debug\netstandard2.0\Users-Demo.Validations.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Validations\obj\Debug\netstandard2.0\Users-Demo.Validations.pdb
