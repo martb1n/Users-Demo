@@ -1,0 +1,14 @@
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\bin\Debug\netstandard2.0\Users-Demo.Services.deps.json
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\bin\Debug\netstandard2.0\Users-Demo.Services.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\bin\Debug\netstandard2.0\Users-Demo.Services.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\bin\Debug\netstandard2.0\Users-Demo.DAL.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\bin\Debug\netstandard2.0\Users-Demo.Repository.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\bin\Debug\netstandard2.0\Users-Demo.DAL.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\bin\Debug\netstandard2.0\Users-Demo.Repository.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\obj\Debug\netstandard2.0\Users-Demo.Services.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\obj\Debug\netstandard2.0\Users-Demo.Services.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\obj\Debug\netstandard2.0\Users-Demo.Services.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\obj\Debug\netstandard2.0\Users-Demo.Services.AssemblyInfo.cs
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\obj\Debug\netstandard2.0\Users-Demo.Services.csproj.CopyComplete
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\obj\Debug\netstandard2.0\Users-Demo.Services.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Services\obj\Debug\netstandard2.0\Users-Demo.Services.pdb

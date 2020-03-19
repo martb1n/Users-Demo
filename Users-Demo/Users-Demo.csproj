@@ -21,5 +21,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Users-Demo.DAL\Users-Demo.DAL.csproj" />
+    <ProjectReference Include="..\Users-Demo.Services\Users-Demo.Services.csproj" />
+  </ItemGroup>
+
 
 </Project>

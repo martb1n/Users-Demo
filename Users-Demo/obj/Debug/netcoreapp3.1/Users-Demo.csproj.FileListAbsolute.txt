@@ -308,3 +308,9 @@ C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.dll
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.pdb
 C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\obj\Debug\netcoreapp3.1\Users-Demo.genruntimeconfig.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.DAL.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.DAL.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Repository.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Services.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Services.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo\bin\Debug\netcoreapp3.1\Users-Demo.Repository.pdb

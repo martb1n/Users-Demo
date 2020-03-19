@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Users_Demo.Models
+namespace Users_Demo.DAL.Models
 {
     public class Users
     {

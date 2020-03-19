@@ -2796,6 +2796,46 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Users-Demo.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Users-Demo.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users-Demo.DAL.dll": {}
+        }
+      },
+      "Users-Demo.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Users-Demo.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users-Demo.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users-Demo.Repository.dll": {}
+        }
+      },
+      "Users-Demo.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Users-Demo.DAL": "1.0.0",
+          "Users-Demo.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users-Demo.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users-Demo.Services.dll": {}
+        }
       }
     }
   },
@@ -8735,6 +8775,21 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Users-Demo.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Users-Demo.DAL/Users-Demo.DAL.csproj",
+      "msbuildProject": "../Users-Demo.DAL/Users-Demo.DAL.csproj"
+    },
+    "Users-Demo.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Users-Demo.Repository/Users-Demo.Repository.csproj",
+      "msbuildProject": "../Users-Demo.Repository/Users-Demo.Repository.csproj"
+    },
+    "Users-Demo.Services/1.0.0": {
+      "type": "project",
+      "path": "../Users-Demo.Services/Users-Demo.Services.csproj",
+      "msbuildProject": "../Users-Demo.Services/Users-Demo.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8748,7 +8803,9 @@
       "Swashbuckle.AspNetCore.Newtonsoft >= 5.1.0",
       "Swashbuckle.AspNetCore.Swagger >= 5.1.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 5.1.0",
-      "Swashbuckle.AspNetCore.SwaggerUI >= 5.1.0"
+      "Swashbuckle.AspNetCore.SwaggerUI >= 5.1.0",
+      "Users-Demo.DAL >= 1.0.0",
+      "Users-Demo.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8783,7 +8840,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.DAL\\Users-Demo.DAL.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.DAL\\Users-Demo.DAL.csproj"
+            },
+            "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Services\\Users-Demo.Services.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Services\\Users-Demo.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

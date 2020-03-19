@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\bin\Debug\netstandard2.0\Users-Demo.Repository.deps.json
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\bin\Debug\netstandard2.0\Users-Demo.Repository.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\bin\Debug\netstandard2.0\Users-Demo.Repository.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\bin\Debug\netstandard2.0\Users-Demo.DAL.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\bin\Debug\netstandard2.0\Users-Demo.DAL.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\obj\Debug\netstandard2.0\Users-Demo.Repository.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\obj\Debug\netstandard2.0\Users-Demo.Repository.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\obj\Debug\netstandard2.0\Users-Demo.Repository.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\obj\Debug\netstandard2.0\Users-Demo.Repository.AssemblyInfo.cs
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\obj\Debug\netstandard2.0\Users-Demo.Repository.csproj.CopyComplete
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\obj\Debug\netstandard2.0\Users-Demo.Repository.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.Repository\obj\Debug\netstandard2.0\Users-Demo.Repository.pdb

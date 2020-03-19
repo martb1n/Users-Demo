@@ -7,7 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Users_Demo.Models;
+using Users_Demo.Config;
+using Users_Demo.DAL;
 
 namespace Users_Demo
 {
@@ -23,8 +24,10 @@ namespace Users_Demo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddServices();
+            services.AddRepository();
             services.AddControllers();
-            services.AddDbContext<UsersContext>(opt =>
+            services.AddDbContext<UsersDemoContext>(opt =>
               opt.UseInMemoryDatabase("UsersList"));
             services.AddSwaggerGen(s =>
             {

@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Users_Demo.Models;
+using Users_Demo.DAL;
+using Users_Demo.DAL.Models;
+using Users_Demo.Services.Interface;
 
 namespace Users_Demo.Controllers
 {
@@ -11,111 +12,90 @@ namespace Users_Demo.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly UsersContext _context;
+        private readonly UsersDemoContext _context;
+        private readonly IUserService userService;
 
-        public UsersController(UsersContext context)
+        public UsersController(UsersDemoContext context, IUserService userService)
         {
             _context = context;
+            this.userService = userService;
         }
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
+        public async Task<IActionResult> GetUsers()
         {
-            return await _context.Users.ToListAsync();
-        }
-
-        // GET: api/Users/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Users>> GetUsers(int id)
-        {
-            var users = await _context.Users.FindAsync(id);
-
+            var users = await userService.Get();
             if (users == null)
             {
                 return NotFound();
             }
-
-            return users;
+            return Ok(users);
         }
 
-        [HttpGet("GetUsersByFirstName/{firstName}")]
-        public IQueryable<Users> GetUsersByFirstName(string firstName)
+        // GET: api/Users/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetUsers(int id)
         {
-            var users = from user in _context.Users
-                        where user.FirstName == firstName
-                        select user;
-            return users;
-        }
+            var user = await userService.GetById(id);
 
-        [HttpGet("GetUsersByLastName/{lastName}")]
-        public IQueryable<Users> GetUsersByLastName(string lastName)
-        {
-            var users = from user in _context.Users
-                        where user.LastName == lastName
-                        select user;
-            return users;
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
         }
 
         // PUT: api/Users/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsers(int id, Users users)
+        public async Task<IActionResult> PutUsers(Users users)
         {
-            if (id != users.Id)
-            {
+            var putUser = await  userService.Update(users);
+            if (putUser)
+                return Ok(putUser);
+            else
                 return BadRequest();
-            }
-
-            _context.Entry(users).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UsersExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
         }
 
         // POST: api/Users
         [HttpPost]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {
-            _context.Users.Add(users);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUsers", new { id = users.Id }, users);
+            var postUser = await userService.Create(users);
+            if (postUser)
+                return CreatedAtAction("PostUsers", "Success");
+            else
+                return StatusCode(409);
         }
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Users>> DeleteUsers(int id)
         {
-            var users = await _context.Users.FindAsync(id);
-            if (users == null)
-            {
-                return NotFound();
-            }
-
-            _context.Users.Remove(users);
-            await _context.SaveChangesAsync();
-
-            return users;
+            var delUser = await userService.Delete(id);
+            if(delUser) 
+                return Ok(delUser);
+            else
+                return BadRequest();
         }
 
-        private bool UsersExists(int id)
+        [HttpGet("GetUsersByFirstName/{firstName}")]
+        public async Task<IActionResult> GetUsersByFirstName(string firstName)
         {
-            return _context.Users.Any(e => e.Id == id);
+            var users = await userService.GetByFirstName(firstName);
+            if(users != null)
+                return Ok(users);
+            return NotFound();
+        }
+
+        [HttpGet("GetUsersByLastName/{lastName}")]
+        public async Task<IActionResult> GetUsersByLastName(string lastName)
+        {
+            var users = await userService.GetByLastname(lastName);
+            if (users != null)
+                return Ok(users);
+            return NotFound();
         }
     }
 }

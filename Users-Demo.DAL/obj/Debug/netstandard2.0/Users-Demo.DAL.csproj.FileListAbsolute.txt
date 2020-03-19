@@ -1,0 +1,9 @@
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\bin\Debug\netstandard2.0\Users-Demo.DAL.deps.json
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\bin\Debug\netstandard2.0\Users-Demo.DAL.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\obj\Debug\netstandard2.0\Users-Demo.DAL.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\obj\Debug\netstandard2.0\Users-Demo.DAL.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\obj\Debug\netstandard2.0\Users-Demo.DAL.AssemblyInfo.cs
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\bin\Debug\netstandard2.0\Users-Demo.DAL.pdb
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\obj\Debug\netstandard2.0\Users-Demo.DAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\obj\Debug\netstandard2.0\Users-Demo.DAL.dll
+C:\Users\admin\Desktop\Users-Demo\Users-Demo\Users-Demo.DAL\obj\Debug\netstandard2.0\Users-Demo.DAL.pdb
