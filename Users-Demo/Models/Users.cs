@@ -10,6 +10,5 @@ namespace Users_Demo.Models
         public DateTime DateOfBirth { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
-
     }
 }
