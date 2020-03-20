@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users-Demo.Services", "User
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users-Demo.Repository", "Users-Demo.Repository\Users-Demo.Repository.csproj", "{864705F6-17BB-4DCA-A4FC-76B6401160DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users-Demo.Handler", "Users-Demo.Handler\Users-Demo.Handler.csproj", "{46E91103-BF19-472C-85AE-5A722C9A4E29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users-Demo.Handler", "Users-Demo.Handler\Users-Demo.Handler.csproj", "{46E91103-BF19-472C-85AE-5A722C9A4E29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -24,6 +24,7 @@ namespace Users_Demo
         {
             var assembly = AppDomain.CurrentDomain.Load("Users-Demo.Handler");
             services.AddMediatR(assembly);
+            services.AddValidator();
             services.AddServices();
             services.AddRepository();
             services.AddControllers();
