@@ -26,7 +26,6 @@ namespace Users_Demo
             services.AddMediatR(assembly);
             services.AddValidator();
             services.AddServices();
-            services.AddRepository();
             services.AddControllers();
             services.AddDbContext<UsersDemoContext>(opt =>
               opt.UseInMemoryDatabase("UsersList"));
