@@ -25,9 +25,9 @@ namespace Users_Demo.Validator.Models
                 .NotEmpty()
                 .Must(BeAValidDate);
 
-            RuleFor(x => x.IsDeleted).NotEmpty();
+            RuleFor(x => x.IsDeleted).NotNull();
 
-            RuleFor(x => x.IsActive).NotEmpty();
+            RuleFor(x => x.IsActive).NotNull();
         }
 
         private bool BeAValidDate(DateTime date)
