@@ -39,16 +39,9 @@ namespace Users_Demo.Repository.Implementation
 
         public IQueryable<Users> Get() => _context.Users;
 
-        public IQueryable<Users> GetByFilter(Expression<Func<Users, bool>> filter = null)
-        {
-            var user = _context.Set<Users>().Where(filter);
-            return user;
-        }
+        public IQueryable<Users> GetByFilter(Expression<Func<Users, bool>> filter = null) => _context.Set<Users>().Where(filter);
 
-        public async Task<Users> GetByIdAsync(int id)
-        {
-            return await _context.Set<Users>().FindAsync(id);
-        }
+        public async Task<Users> GetByIdAsync(int id) => await _context.Set<Users>().FindAsync(id);
 
         public async Task<bool> Update(Users data)
         {

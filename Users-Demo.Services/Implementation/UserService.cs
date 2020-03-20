@@ -9,16 +9,16 @@ namespace Users_Demo.Services.Implementation
 {
     public class UserService : IUserService
     {
-        public readonly IUserRepository repository;
+        private readonly IUserRepository _repository;
         public UserService(IUserRepository repository)
         {
-            this.repository = repository;
+            _repository = repository;
         }
         public async Task<bool> Create(Users data)
         {
             try
             {
-                await repository.Create(data);
+                await _repository.Create(data);
             }
             catch (Exception)
             {
@@ -31,7 +31,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                await repository.Delete(id);
+                await _repository.Delete(id);
             }
             catch (Exception)
             {
@@ -44,7 +44,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await Task.Run(() => repository.Get());
+                var user = await Task.Run(() => _repository.Get());
                 return user;
             }
             catch (Exception)
@@ -57,7 +57,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await Task.Run(() => repository.GetByFilter(filter: i => i.FirstName == firstName));
+                var user = await Task.Run(() => _repository.GetByFilter(filter: i => i.FirstName == firstName));
                 return user;
             }
             catch (Exception)
@@ -70,7 +70,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await repository.GetByIdAsync(id);
+                var user = await _repository.GetByIdAsync(id);
                 return user;
             }
             catch (Exception)
@@ -83,7 +83,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await Task.Run(() => repository.GetByFilter(filter: i => i.LastName == lastName));
+                var user = await Task.Run(() => _repository.GetByFilter(filter: i => i.LastName == lastName));
                 return user;
             }
             catch (Exception)
@@ -96,7 +96,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                await repository.Update(data);
+                await _repository.Update(data);
             }
             catch (Exception)
             {

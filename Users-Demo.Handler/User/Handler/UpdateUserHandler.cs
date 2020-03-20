@@ -8,17 +8,8 @@ namespace Users_Demo.Handler.User.Handler
 {
     class UpdateUserHandler : IRequestHandler<UpdateUserQuery, bool>
     {
-        private readonly IUserService userService;
-        public UpdateUserHandler(IUserService userService)
-        {
-            this.userService = userService;
-        }
-        public async Task<bool> Handle(UpdateUserQuery request, CancellationToken cancellationToken)
-        {
-            var updateUser = await userService.Update(request.Users);
-            if (updateUser)
-                return true;
-            return false;
-        }
+        private readonly IUserService _userService;
+        public UpdateUserHandler(IUserService userService) => _userService = userService;
+        public async Task<bool> Handle(UpdateUserQuery request, CancellationToken cancellationToken) => await _userService.Update(request.Users);
     }
 }

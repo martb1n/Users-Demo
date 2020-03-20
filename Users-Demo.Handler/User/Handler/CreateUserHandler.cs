@@ -8,19 +8,9 @@ namespace Users_Demo.Handler.User.Handler
 {
     class CreateUserHandler : IRequestHandler<CreateUserQuery, bool>
     {
-        private readonly IUserService userService;
-        public CreateUserHandler(IUserService userService)
-        {
-            this.userService = userService;
-        }
-        public async Task<bool> Handle(CreateUserQuery request, CancellationToken cancellationToken)
-        {
-            var createUser = await userService.Create(request.Users);
-            if (createUser)
-            {
-                return true;
-            }
-            return false;
-        }
+        private readonly IUserService _userService;
+        public CreateUserHandler(IUserService userService) => _userService = userService;
+
+        public async Task<bool> Handle(CreateUserQuery request, CancellationToken cancellationToken) => await _userService.Create(request.Users);
     }
 }

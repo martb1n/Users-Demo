@@ -10,26 +10,16 @@ namespace Users_Demo.Handler.User.Handler
 {
     class GetUserByNameHandler : IRequestHandler<GetUsersByNameQuery, IEnumerable<Users>>
     {
-        private readonly IUserService userService;
-        public GetUserByNameHandler(IUserService userService)
-        {
-            this.userService = userService;
-        }
+        private readonly IUserService _userService;
+        public GetUserByNameHandler(IUserService userService) => _userService = userService;
+
         public async Task<IEnumerable<Users>> Handle(GetUsersByNameQuery request, CancellationToken cancellationToken)
         {
             if (request.FirstName != null)
                 return await GetByFName(request.FirstName);
             return await GetByLName(request.LastName);
         }
-        private async Task<IEnumerable<Users>> GetByFName(string firstName)
-        {
-            var user = await userService.GetByFirstName(firstName);
-            return user;
-        }
-        private async Task<IEnumerable<Users>> GetByLName(string lastName)
-        {
-            var user = await userService.GetByLastname(lastName);
-            return user;
-        }
+        private async Task<IEnumerable<Users>> GetByFName(string firstName) => await _userService.GetByFirstName(firstName);
+        private async Task<IEnumerable<Users>> GetByLName(string lastName) => await _userService.GetByLastname(lastName);
     }
 }
