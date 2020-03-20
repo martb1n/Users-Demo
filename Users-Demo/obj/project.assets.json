@@ -2913,6 +2913,20 @@
         "runtime": {
           "bin/placeholder/Users-Demo.Services.dll": {}
         }
+      },
+      "Users-Demo.Validator/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidation": "8.6.2",
+          "Users-Demo.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users-Demo.Validator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users-Demo.Validator.dll": {}
+        }
       }
     }
   },
@@ -8946,6 +8960,11 @@
       "type": "project",
       "path": "../Users-Demo.Services/Users-Demo.Services.csproj",
       "msbuildProject": "../Users-Demo.Services/Users-Demo.Services.csproj"
+    },
+    "Users-Demo.Validator/1.0.0": {
+      "type": "project",
+      "path": "../Users-Demo.Validator/Users-Demo.Validator.csproj",
+      "msbuildProject": "../Users-Demo.Validator/Users-Demo.Validator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8964,7 +8983,8 @@
       "Swashbuckle.AspNetCore.SwaggerUI >= 5.1.0",
       "Users-Demo.DAL >= 1.0.0",
       "Users-Demo.Handler >= 1.0.0",
-      "Users-Demo.Services >= 1.0.0"
+      "Users-Demo.Services >= 1.0.0",
+      "Users-Demo.Validator >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9008,6 +9028,9 @@
             },
             "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Services\\Users-Demo.Services.csproj": {
               "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Services\\Users-Demo.Services.csproj"
+            },
+            "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Validator\\Users-Demo.Validator.csproj": {
+              "projectPath": "C:\\Users\\admin\\Desktop\\Users-Demo\\Users-Demo\\Users-Demo.Validator\\Users-Demo.Validator.csproj"
             }
           }
         }

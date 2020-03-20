@@ -2,11 +2,11 @@
 using FluentValidation;
 using Users_Demo.DAL.Models;
 
-namespace Users_Demo.Validation
+namespace Users_Demo.Validator.Models
 {
-    public class UserModelValidation : AbstractValidator<Users>
+    public class UsersModelValidator : AbstractValidator<Users>
     {
-        public UserModelValidation()
+        public UsersModelValidator()
         {
             RuleFor(x => x.FirstName)
                 .NotNull()
