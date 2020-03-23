@@ -10,6 +10,6 @@ namespace Users_Demo.Handler.University.Handler
     {
         private readonly IUniversityService _universityService;
         public UpdateUniversityHandler(IUniversityService universityService) => _universityService = universityService;
-        public async Task<bool> Handle(UpdateUniversityQuery request, CancellationToken cancellationToken) => await _universityService.Update(request.University);
+        public async Task<bool> Handle(UpdateUniversityQuery request, CancellationToken cancellationToken) => await _universityService.UpdateAsync(request.University);
     }
 }

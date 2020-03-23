@@ -5,24 +5,20 @@ using System.Threading.Tasks;
 
 namespace Users_Demo.Repository.Interface
 {
-    public interface IRepository
+    public interface IRepository<TEntity> where TEntity : class
     {
-        Task<bool> Create<TModel>(TModel data)
-            where TModel : class;
+        Task<bool> CreateAsync(TEntity data);
 
-        Task<bool> Update<TModel>(TModel data)
-            where TModel : class;
+        Task<bool> UpdateAsync(TEntity data);
 
-        Task<bool> Delete<TModel>(TModel data)
-            where TModel : class;
+        Task<bool> DeleteAsync(TEntity data);
 
-        IQueryable<TModel> Get<TModel>()
-            where TModel : class;
+        Task<bool> DeleteAsync(int id);
 
-        Task<TModel> GetByIdAsync<TModel>(int id)
-            where TModel : class;
+        IQueryable<TEntity> Get();
 
-        IQueryable<TModel> GetByFilter<TModel>(Expression<Func<TModel, bool>> filter = null)
-            where TModel : class;
+        Task<TEntity> GetByIdAsync(int id);
+
+        IQueryable<TEntity> GetByFilter(Expression<Func<TEntity, bool>> filter = null);
     }
 }

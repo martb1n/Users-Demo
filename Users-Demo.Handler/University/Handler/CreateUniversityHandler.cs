@@ -11,6 +11,6 @@ namespace Users_Demo.Handler.University.Handler
         private readonly IUniversityService _universityService;
         public CreateUniversityHandler(IUniversityService universityService) => _universityService = universityService;
 
-        public async Task<bool> Handle(CreateUniversityQuery request, CancellationToken cancellationToken) => await _universityService.Create(request.University);
+        public async Task<bool> Handle(CreateUniversityQuery request, CancellationToken cancellationToken) => await _universityService.CreateAsync(request.University);
     }
 }

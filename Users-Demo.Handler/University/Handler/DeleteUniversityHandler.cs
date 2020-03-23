@@ -10,6 +10,6 @@ namespace Users_Demo.Handler.University.Handler
     {
         private readonly IUniversityService _universityService;
         public DeleteUniversityHandler(IUniversityService universityService) => _universityService = universityService;
-        public Task<bool> Handle(DeleteUniversityQuery request, CancellationToken cancellationToken) => _universityService.Delete(request.Id);
+        public Task<bool> Handle(DeleteUniversityQuery request, CancellationToken cancellationToken) => _universityService.DeleteAsync(request.Id);
     }
 }

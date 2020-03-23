@@ -20,6 +20,6 @@ namespace Users_Demo.Handler.User.Handler
             return await GetByLName(request.LastName);
         }
         private async Task<IEnumerable<Users>> GetByFName(string firstName) => await _userService.GetByFirstName(firstName);
-        private async Task<IEnumerable<Users>> GetByLName(string lastName) => await _userService.GetByLastname(lastName);
+        private async Task<IEnumerable<Users>> GetByLName(string lastName) => await _userService.GetByLastNameAsync(lastName);
     }
 }

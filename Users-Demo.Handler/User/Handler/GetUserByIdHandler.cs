@@ -12,6 +12,6 @@ namespace Users_Demo.Handler.User.Handler
         private readonly IUserService _userService;
         public GetUserByIdHandler(IUserService userService) => _userService = userService;
 
-        public async Task<Users> Handle(GetUserByIdQuery request, CancellationToken cancellationToken) => await _userService.GetById(request.Id);
+        public Task<Users> Handle(GetUserByIdQuery request, CancellationToken cancellationToken) => _userService.GetByIdAsync(request.Id);
     }
 }

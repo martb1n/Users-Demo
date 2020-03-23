@@ -11,6 +11,6 @@ namespace Users_Demo.Handler.University.Handler
         private readonly IUniversityService _universityService;
         public GetUniversityByIdHandler(IUniversityService universityService) => _universityService = universityService;
 
-        public async Task<DAL.Models.University> Handle(GetUniversityByIdQuery request, CancellationToken cancellationToken) => await _universityService.GetById(request.Id);
+        public Task<DAL.Models.University> Handle(GetUniversityByIdQuery request, CancellationToken cancellationToken) => _universityService.GetByIdAsync(request.Id);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Users_Demo.DAL.Models;
@@ -13,6 +14,6 @@ namespace Users_Demo.Handler.User.Handler
         private readonly IUserService _userService;
         public GetUserHandler(IUserService userService) => _userService = userService;
 
-        public async Task<IEnumerable<Users>> Handle(GetUsersQuery request, CancellationToken cancellationToken) => await _userService.Get();
+        public Task<IEnumerable<Users>> Handle(GetUsersQuery request, CancellationToken cancellationToken) => Task.FromResult(_userService.Get().AsEnumerable());
     }
 }

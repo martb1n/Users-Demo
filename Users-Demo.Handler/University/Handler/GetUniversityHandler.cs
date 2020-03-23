@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
@@ -12,6 +13,6 @@ namespace Users_Demo.Handler.University.Handler
         private readonly IUniversityService _universityService;
         public GetUniversityHandler(IUniversityService universityService) => _universityService = universityService;
 
-        public async Task<IEnumerable<DAL.Models.University>> Handle(GetUniversityQuery request, CancellationToken cancellationToken) => await _universityService.Get();
+        public Task<IEnumerable<DAL.Models.University>> Handle(GetUniversityQuery request, CancellationToken cancellationToken) => Task.FromResult(_universityService.Get().AsEnumerable());
     }
 }

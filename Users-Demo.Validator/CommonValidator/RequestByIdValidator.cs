@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Users_Demo.Common.Requests.CommonRequest;
 
 namespace Users_Demo.Validator.CommonValidator
 {

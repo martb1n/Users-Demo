@@ -11,6 +11,6 @@ namespace Users_Demo.Handler.User.Handler
         private readonly IUserService _userService;
         public CreateUserHandler(IUserService userService) => _userService = userService;
 
-        public async Task<bool> Handle(CreateUserQuery request, CancellationToken cancellationToken) => await _userService.Create(request.Users);
+        public async Task<bool> Handle(CreateUserQuery request, CancellationToken cancellationToken) => await _userService.CreateAsync(request.Users);
     }
 }

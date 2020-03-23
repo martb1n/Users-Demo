@@ -1,16 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Users_Demo.DAL.Models;
+using Users_Demo.Repository.Interface;
 
 namespace Users_Demo.Services.Interface
 {
-    public interface IUniversityService
+    public interface IUniversityService : IRepository<University>
     {
-        Task<bool> Create(University data);
-        Task<bool> Update(University data);
-        Task<bool> Delete(int id);
-        Task<University> GetById(int id);
-        Task<IEnumerable<University>> Get();
-        Task<IEnumerable<University>> GetByName(string name);
+        Task<List<University>> GetByName(string name);
     }
 }
