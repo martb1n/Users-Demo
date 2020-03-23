@@ -11,5 +11,7 @@ namespace Users_Demo.DAL
         }
 
         public DbSet<Users> Users { get; set; }
+
+        public DbSet<University> University { get; set; }
     }
 }

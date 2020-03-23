@@ -20,7 +20,7 @@ namespace Users_Demo.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<IActionResult> GetUsers()
+        public async Task<IActionResult> Get()
         {
             var users = await _mediator.Send(new GetUsersQuery());
             if(users.Any()) 
@@ -29,7 +29,7 @@ namespace Users_Demo.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetUsers(int id)
+        public async Task<IActionResult> Get(int id)
         {
             var user = await _mediator.Send(new GetUserByIdQuery(id));
             if (user != null)
@@ -37,8 +37,8 @@ namespace Users_Demo.Controllers
             return NoContent();
         }
 
-        [HttpGet("GetUsersByFirstName/{firstName}")]
-        public async Task<IActionResult> GetUsersByFirstName(string firstName)
+        [HttpGet("GetByFirstName/{firstName}")]
+        public async Task<IActionResult> GetByFirstName(string firstName)
         {
             var users = await _mediator.Send(new GetUsersByNameQuery(firstName: firstName));
             if (users != null)
@@ -46,8 +46,8 @@ namespace Users_Demo.Controllers
             return NoContent();
         }
 
-        [HttpGet("GetUsersByLastName/{lastName}")]
-        public async Task<IActionResult> GetUsersByLastName(string lastName)
+        [HttpGet("GetByLastName/{lastName}")]
+        public async Task<IActionResult> GetByLastName(string lastName)
         {
             var users = await _mediator.Send(new GetUsersByNameQuery(lastName: lastName));
             if (users != null)
@@ -56,7 +56,7 @@ namespace Users_Demo.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsers(Users users)
+        public async Task<IActionResult> Put(Users users)
         {
             var putUser = await _mediator.Send(new UpdateUserQuery(users));
             if (putUser)
@@ -65,16 +65,16 @@ namespace Users_Demo.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostUsers(Users users)
+        public async Task<IActionResult> Post(Users users)
         {
             var postUser = await _mediator.Send(new CreateUserQuery(users));
             if (postUser)
-                return CreatedAtAction($"PostUsers", "Success");
+                return CreatedAtAction($"Post", "Success");
             return StatusCode(409);
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Users>> DeleteUsers(int id)
+        public async Task<ActionResult<Users>> Delete(int id)
         {
             var delUser = await _mediator.Send(new DeleteUserQuery(id));
             if (delUser)

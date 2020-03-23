@@ -11,23 +11,17 @@ namespace Users_Demo.Services.Implementation
 {
     public class UserService : IUserService
     {
-        private readonly UsersDemoContext _context;
-
+        private readonly BaseRepository<Users> _baseRepository;
         public UserService(UsersDemoContext context)
         {
-            _context = context;
-        }
-
-        public BaseRepository<Users> GetBaseRepository()
-        {
-            return new UsersRepository(_context);
+            _baseRepository = new UsersRepository(context);
         }
 
         public async Task<bool> Create(Users data)
         {
             try
             {
-                await GetBaseRepository().Create(data);
+                await _baseRepository.Create(data);
             }
             catch (Exception)
             {
@@ -40,7 +34,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                await GetBaseRepository().Delete(id);
+                await _baseRepository.Delete(id);
             }
             catch (Exception)
             {
@@ -53,7 +47,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await Task.Run(() => GetBaseRepository().Get());
+                var user = await Task.Run(() => _baseRepository.Get());
                 return user;
             }
             catch (Exception)
@@ -66,7 +60,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await Task.Run(() => GetBaseRepository().GetByFilter(filter: i => i.FirstName == firstName));
+                var user = await Task.Run(() => _baseRepository.GetByFilter(filter: i => i.FirstName == firstName));
                 return user;
             }
             catch (Exception)
@@ -79,7 +73,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await GetBaseRepository().GetByIdAsync(id);
+                var user = await _baseRepository.GetByIdAsync(id);
                 return user;
             }
             catch (Exception)
@@ -92,7 +86,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var user = await Task.Run(() => GetBaseRepository().GetByFilter(filter: i => i.LastName == lastName));
+                var user = await Task.Run(() => _baseRepository.GetByFilter(filter: i => i.LastName == lastName));
                 return user;
             }
             catch (Exception)
@@ -105,7 +99,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                await GetBaseRepository().Update(data);
+                await _baseRepository.Update(data);
             }
             catch (Exception)
             {
