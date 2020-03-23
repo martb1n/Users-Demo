@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
+using Users_Demo.Common.Requests.CommonRequest;
+using Users_Demo.Common.Requests.University;
 using Users_Demo.DAL.Models;
 using Users_Demo.Handler.University.Request;
 
@@ -28,25 +30,25 @@ namespace Users_Demo.Controllers
             return NoContent();
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("GetById/")]
+        public async Task<IActionResult> Get([FromQuery]RequestById req)
         {
-            var university = await _mediator.Send(new GetUniversityByIdQuery(id));
+            var university = await _mediator.Send(new GetUniversityByIdQuery(req.Id));
             if (university != null)
                 return Ok(university);
             return NoContent();
         }
 
-        [HttpGet("GetUniversityByName/{name}")]
-        public async Task<IActionResult> GetByName(string name)
+        [HttpGet("GetUniversityByName")]
+        public async Task<IActionResult> GetByName([FromQuery]UniversityByName req)
         {
-            var university = await _mediator.Send(new GetUniversityByNameQuery(name));
+            var university = await _mediator.Send(new GetUniversityByNameQuery(req.Name));
             if (university != null)
                 return Ok(university);
             return NoContent();
         }
 
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task<IActionResult> Put(University university)
         {
             var putUniversity = await _mediator.Send(new UpdateUniversityQuery(university));
@@ -64,10 +66,10 @@ namespace Users_Demo.Controllers
             return StatusCode(409);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<University>> Delete(int id)
+        [HttpDelete]
+        public async Task<ActionResult<University>> Delete([FromQuery]RequestById req)
         {
-            var delUniversity = await _mediator.Send(new DeleteUniversityQuery(id));
+            var delUniversity = await _mediator.Send(new DeleteUniversityQuery(req.Id));
             if (delUniversity)
                 return Ok(true);
             return BadRequest();

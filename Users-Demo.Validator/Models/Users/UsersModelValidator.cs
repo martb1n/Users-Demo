@@ -1,13 +1,14 @@
 ﻿using System;
 using FluentValidation;
-using Users_Demo.DAL.Models;
 
-namespace Users_Demo.Validator.Models
+namespace Users_Demo.Validator.Models.Users
 {
-    public class UsersModelValidator : AbstractValidator<Users>
+    public class UsersModelValidator : AbstractValidator<DAL.Models.Users>
     {
         public UsersModelValidator()
         {
+            RuleFor(x => x.Id).NotNull()
+                .GreaterThanOrEqualTo(1);
             RuleFor(x => x.FirstName)
                 .NotNull()
                 .NotEmpty()

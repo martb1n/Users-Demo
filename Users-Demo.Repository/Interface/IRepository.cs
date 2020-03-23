@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Users_Demo.DAL;
 
 namespace Users_Demo.Repository.Interface
 {
