@@ -28,7 +28,7 @@ namespace Users_Demo.Config
 
         internal static void AddValidator(this IServiceCollection services)
         {
-            services.AddMvc(options => { options.Filters.Add<ValidationFilter>(); }).AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
+            services.AddMvc(options => { options.Filters.Add<ValidationFilter>(); }).AddFluentValidation();
             services.AddModelValidator();
         }
 
