@@ -10,6 +10,6 @@ namespace Users_Demo.Handler.User.Handler
     {
         private readonly IUserService _userService;
         public DeleteUserHandler(IUserService userService) => _userService = userService;
-        public async Task<bool> Handle(DeleteUserQuery request, CancellationToken cancellationToken) => await _userService.Delete(request.Id);
+        public Task<bool> Handle(DeleteUserQuery request, CancellationToken cancellationToken) => _userService.Delete(request.Id);
     }
 }

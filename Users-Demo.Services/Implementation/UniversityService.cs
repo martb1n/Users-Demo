@@ -9,8 +9,8 @@ namespace Users_Demo.Services.Implementation
 {
     public class UniversityService : IUniversityService
     {
-        private readonly IRepository<University> _repository; 
-        public UniversityService(IRepository<University> repository)
+        private readonly IRepository _repository; 
+        public UniversityService(IRepository repository)
         {
             _repository = repository;
         }
@@ -45,7 +45,7 @@ namespace Users_Demo.Services.Implementation
             
             try
             {
-                var university = await _repository.GetByIdAsync(id);
+                var university = await _repository.GetByIdAsync<University>(id);
                 if (university == null)
                     return false;
                 await _repository.Delete(university);
@@ -61,7 +61,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var university = await _repository.GetByIdAsync(id);
+                var university = await _repository.GetByIdAsync<University>(id);
                 return university;
             }
             catch (Exception)
@@ -74,7 +74,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var university = await Task.Run(() => _repository.Get());
+                var university = await Task.Run(() => _repository.Get<University>());
                 return university;
             }
             catch (Exception)
@@ -87,7 +87,7 @@ namespace Users_Demo.Services.Implementation
         {
             try
             {
-                var university = await Task.Run(() => _repository.GetByFilter(filter: i => i.Name == name));
+                var university = await Task.Run(() => _repository.GetByFilter<University>(filter: i => i.Name == name));
                 return university;
             }
             catch (Exception)

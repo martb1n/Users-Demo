@@ -8,23 +8,23 @@ using Users_Demo.Repository.Interface;
 
 namespace Users_Demo.Repository.Implementation
 {
-    public class Repository<TModel> : IRepository<TModel>
-    where TModel : UsersDemoContext
+    public class Repository<TContext> : IRepository
+    where TContext : UsersDemoContext
     {
         private readonly UsersDemoContext _context;
 
-        public Repository(UsersDemoContext context)
+        public Repository(TContext context)
         {
             _context = context;
         }
-        public async Task<bool> Create(TModel data)
+        public async Task<bool> Create<TModel>(TModel data) where TModel : class
         {
             _context.Set<TModel>().Add(data);
             await _context.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> Update(TModel data)
+        public async Task<bool> Update<TModel>(TModel data) where TModel : class
         {
             _context.Set<TModel>().Attach(data);
             _context.Entry(data).State = EntityState.Modified;
@@ -32,7 +32,7 @@ namespace Users_Demo.Repository.Implementation
             return true;
         }
 
-        public async Task<bool> Delete(TModel data)
+        public async Task<bool> Delete<TModel>(TModel data) where TModel : class
         {
             var dbSet = _context.Set<TModel>();
             if (_context.Entry(data).State == EntityState.Detached)
@@ -44,10 +44,10 @@ namespace Users_Demo.Repository.Implementation
             return true;
         }
 
-        public IQueryable<TModel> Get() => _context.Set<TModel>();
+        public IQueryable<TModel> Get<TModel>() where TModel : class => _context.Set<TModel>();
 
-        public async Task<TModel> GetByIdAsync(int id) => await _context.Set<TModel>().FindAsync(id);
+        public async Task<TModel> GetByIdAsync<TModel>(int id) where TModel : class => await _context.Set<TModel>().FindAsync(id);
 
-        public IQueryable<TModel> GetByFilter(Expression<Func<TModel, bool>> filter = null) => _context.Set<TModel>().Where(filter);
+        public IQueryable<TModel> GetByFilter<TModel>(Expression<Func<TModel, bool>> filter = null) where TModel : class => _context.Set<TModel>().Where(filter);
     }
 }

@@ -18,7 +18,7 @@ namespace Users_Demo.Config
         {
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IUniversityService, UniversityService>();
-            //services.AddTransient<IRepository<UsersDemoContext>, Repository<UsersDemoContext>>();
+            services.AddTransient<IRepository, Repository<UsersDemoContext>>();
         }
 
         internal static void AddValidator(this IServiceCollection services)
