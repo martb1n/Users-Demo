@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Users_Demo.DAL.Models;
 using Users_Demo.Handler.University.Request;
-using Users_Demo.Handler.User.Request;
 
 namespace Users_Demo.Controllers
 {

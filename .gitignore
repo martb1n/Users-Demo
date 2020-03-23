@@ -227,3 +227,9 @@ Users-Demo.Common/Users-Demo.Common.csproj
 Users-Demo.DAL/obj/Debug/netstandard2.0/Users-Demo.DAL.csprojAssemblyReference.cache
 *.dll
 *.pdb
+*.cache
+*.cache
+*.cache
+*.pdb
+*.dll
+*.v2
